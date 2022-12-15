@@ -16,7 +16,7 @@ public class JdbcInsert2 {
 		List<String> usernameList = new ArrayList<>();
 		
 		while(true) {
-			System.out.print("등록할 아이디 입렵: ");
+			System.out.print("등록할 아이디 입력: ");
 			usernameList.add(scanner.nextLine());
 			System.out.print("아이디를 추가로 등록하시겠습니까? (Y/y, 취소하려면 아무키나 입렵하세요.)");
 			String selected = scanner.nextLine(); 
@@ -31,7 +31,7 @@ public class JdbcInsert2 {
 		String suffixSql = ";";
 		
 		for(int i = 0; i < usernameList.size(); i++) {
-			valuesBody +="(0, ?)";
+			valuesBody += "(0, ?)";
 			if(i < usernameList.size() - 1) {
 				valuesBody +=", ";
 			}

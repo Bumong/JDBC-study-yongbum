@@ -27,8 +27,8 @@ public class DBConnection {
 		try {
 			Class.forName(Driver.class.getName());  //Class.forName 객체 생성
 			System.out.println("데이터베이스 드라이버 로딩 성공!");
-			url = "jdbc:mysql://localhost:3306/subquery_study";  //jdbc:mysql:을 프로토콜하고 localhost 로 서버를 설정하고 my sql 데이터베이스 불러옴
-			username = "root";
+			url = "jdbc:mysql://localhost:3306/subquery_study";  //jdbc:mysql:을 프로토콜하고 localhost 로
+			username = "root";                                   // 서버를 설정하고 mysql 데이터베이스 불러옴
 			password = "root";
 			
 			connection = DriverManager.getConnection(url, username, password);
