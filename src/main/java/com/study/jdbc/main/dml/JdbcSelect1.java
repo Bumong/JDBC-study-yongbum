@@ -12,7 +12,7 @@ public class JdbcSelect1 {
 	public static void main(String[] args) {
 		Connection connection = DBConnection.getInstance().getConnection();
 		
-		String sql = "select * from order_mst";
+		String sql = "select * from score_mst";
 		
 		try {
 			PreparedStatement pstmt = connection.prepareStatement(sql);   //query 입력하는 공간 쿼리를 들고있는거
